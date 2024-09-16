@@ -1,2 +1,3 @@
 ---
-# vars file for xray
+xray_filename: "Xray-{{ xray_platform }}.zip"
+xray_filename_tmp: "/tmp/{{ xray_filename }}"

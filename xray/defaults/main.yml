@@ -1,2 +1,4 @@
 ---
-# defaults file for xray
+xray_version: "v1.8.24"
+xray_platform: "linux-64"
+xray_bin_path: "/opt/xray"
