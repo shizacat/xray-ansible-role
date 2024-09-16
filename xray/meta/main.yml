@@ -1,6 +1,8 @@
 galaxy_info:
   author: Alexey Matveev
   description: Xray role
+  role_name: xray
+  namespace: amatveev
 
   license: license MIT
 

@@ -1,3 +1,5 @@
 ---
 xray_filename: "Xray-{{ xray_platform }}.zip"
 xray_filename_tmp: "/tmp/{{ xray_filename }}"
+
+xray_package_url: "https://github.com/XTLS/Xray-core/releases/download/{{ xray_version }}/{{ xray_filename }}"

@@ -11,11 +11,14 @@
     mode: '0644'
 
 - name: Reload systemd to recognize the Xray service
-  ansible.builtin.systemd:
+  ansible.builtin.systemd_service:
     daemon_reload: true
 
 - name: Enable and start Xray service
-  ansible.builtin.systemd:
+  ansible.builtin.systemd_service:
     name: xray
     enabled: true
     state: started
+
+- name: Configure XRay
+  ansible.builtin.include_tasks: configure.yaml

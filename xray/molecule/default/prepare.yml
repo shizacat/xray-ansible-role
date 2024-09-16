@@ -1,0 +1,9 @@
+---
+- name: Prepare the system
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Install required packages
+      ansible.builtin.package:
+        name: openssl
+        state: present
