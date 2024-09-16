@@ -10,4 +10,5 @@ pip install -r requirements.txt
 
 # Links
 
+- https://github.com/XTLS/Xray-core
 - https://github.com/pilosus/Xray-ansible/tree/main
