@@ -20,5 +20,18 @@
     enabled: true
     state: started
 
+- name: Config | Create configuration directory is exists
+  ansible.builtin.file:
+    path: "{{ xray_config_dir }}"
+    state: directory
+    owner: root
+    group: root
+
+- name: Config | Create empty configuration file
+  ansible.builtin.copy:
+    content: '{}'
+    dest: "{{ xray_config_dir }}/config.json"
+
 - name: Configure XRay
   ansible.builtin.include_tasks: configure.yaml
+  when: xray_configure
